@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+ul{
+    display: flex;
+}
+ 
+ul li{
+    list-style: none;
+    padding: 10px 13px;
+    font-size: 15px;
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+ul >li> a:hover{
+    color: bisque;
+}
+
+main{
+    min-height: 100vh;
+    padding: 2px;
+
+}
+
+footer{
+    font-size: 10px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    /* background-color: bisque; */
+    max-width: 80vw;
+    margin: auto;
+    padding:  9px 15px;
+
+}
+.container h1{
+    padding: 12px 0;
+
+
+}
+.btn{
+    background: black;
+    color: bisque;
+    padding: 10px 12px;
+    border: 3px solid aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: bisque;
+    color: black;
+
+}
+.logo img{
+    width: 15px;
+    filter: invert(1);
+    
+}
+#Results div::first-letter{
+    text-transform: uppercase;
+}
+input[type="text"]{
+    min-width: 30vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 12px;
+
+    }
+    nav{
+        flex-direction: column;
+
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+
+    }
+    .logo span{
+        font-size: 25px;
+    }
+}
